@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Renace Medical Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <img class="logo-img" src="public/logo principal.png" alt="Renace Medical Center">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#filosofia-renace">Filosofía</a></li>
+          <li><a href="#especialidades">Método</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17crwZ1jEL%2F%3Fmibextid%3DwwXIfr%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio&e=AT2fOUQOT1GngL9xHPR495hXsoLSDseAUu1hb3q7MqCt68a8BIsohjbdVf2mnX6KyMTZxLVT3chm7Ccvwa0ta_ZeNowZ3drqXoXn4x7Vvw"
+          target="_blank" aria-label="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="icon-social">
+            <path d="M15.3 8.5H13.2V7.1c0-.6.4-.8.7-.8h1.4V3.9L13.3 4C10.9 4 9.6 5.6 9.6 7.7v.8H8v3h1.6v8.6h3.7V11.5h2.5l.3-3z" fill="#55A1AE"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/renacemedicalcenter/" target="_blank" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="icon-social">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="#55A1AE" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4.3" stroke="#55A1AE" stroke-width="2"/>
+            <circle cx="17.3" cy="6.7" r="1.2" fill="#55A1AE"/>
+          </svg>
+        </a>
+      </div>
+      <button class="btn-cta-nav" onclick="document.querySelector('#contacto').scrollIntoView({behavior:'smooth'})">
+        Agenda tu cita
+      </button>
+      <img class="nav-scope" src="public/scope.png" alt="">
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       EVENTO TEMPORAL – remover: eliminar este <section>
+       ═══════════════════════════════════════════════════ -->
+ 
+
+
+  <!-- HERO -->
+  <section id="inicio">
+    <div class="container hero hero-v2">
+      <div class="hero-copy reveal hero-v2-copy">
+        <h1 class="hero-v2-title">En este espacio entendemos algo que durante años ha sido pasado por alto</h1>
+        <p class="hero-v2-text">La obesidad no es un problema de voluntad, sino una enfermedad crónica y metabólica que afecta al cuerpo de formas muy distintas de una persona a otra.</p>
+        <div class="hero-actions hero-v2-actions">
+          <button class="btn-primary hero-v2-cta" onclick="document.querySelector('#contacto').scrollIntoView({behavior:'smooth'})">
+            Programa tu valoración inicial
+          </button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════
+             QUIZ HOOK – remover: eliminar este <div>
+             ═══════════════════════════════════════════════ -->
+        <div class="quiz-hook-block">
+          <div class="quiz-hook-inner">
+            <div class="quiz-hook-left">
+              <div class="quiz-hook-badge">
+                <span class="quiz-hook-badge-dot"></span>
+                Evaluación gratuita · 3 min
+              </div>
+              <p class="quiz-hook-title">¿Sabes cómo está tu metabolismo?</p>
+              <p class="quiz-hook-sub">Descubre en 3 minutos tu perfil de riesgo metabólico en 6 dimensiones clave. Sin costo, sin compromiso.</p>
+              <div class="quiz-hook-dims">
+                <span>🫀 Médica</span>
+                <span>🥗 Nutricional</span>
+                <span>🧠 Psicológica</span>
+                <span>🏃 Física</span>
+                <span>😴 Sueño</span>
+                <span>🌿 Ambiental</span>
+              </div>
+            </div>
+            <div class="quiz-hook-right">
+              <button class="quiz-hook-btn" onclick="qpOpen()">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1.5 2-2.5 2.5V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+                Iniciar mi evaluación
+              </button>
+              <p class="quiz-hook-fine">Libre de estigma · Resultados orientativos</p>
+            </div>
+          </div>
+        </div>
+        <!-- FIN QUIZ HOOK -->
+
+      </div>
+      <div class="hero-visual reveal hero-v2-visual">
+        <div class="hero-v2-card">
+          <img class="hero-v2-image" src="public/Equipo.jpg" alt="Equipo Renace Medical Center">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       VSL – Video de presentación
+       ═══════════════════════════════════════════════════ -->
+  <section id="vsl">
+    <div class="container">
+      <div class="vsl-wrap reveal">
+        <div class="vsl-copy">
+          <div class="vsl-eyebrow"><span class="vsl-eyebrow-dot"></span>Antes de agendar tu cita</div>
+          <h2 class="vsl-title">Un mensaje directo de nuestro equipo médico</h2>
+          <p class="vsl-text">En menos de 5 minutos te explicamos por qué las dietas y el ejercicio por sí solos no funcionan a largo plazo, y cómo el Método Renace aborda la causa metabólica, psicológica y física de la obesidad al mismo tiempo.</p>
+          <ul class="vsl-points">
+            <li>Por qué tu cuerpo se "defiende" cuando bajas de peso</li>
+            <li>Qué evalúa realmente un diagnóstico metabólico completo</li>
+            <li>Cómo es el acompañamiento del equipo interdisciplinario</li>
+          </ul>
+        </div>
+        <div class="vsl-video-card">
+          <div class="vsl-video-frame">
+            <!-- Reemplazar el src del iframe por el video final (YouTube/Vimeo) -->
+            <video
+            class="testi-feature-video"
+            controls
+            preload="metadata"
+            playsinline
+           >
+            <source src="public/NuestroenfoqueRenace.MP4" type="video/mp4">
+            Tu navegador no soporta la reproducción de este video.
+          </video>
+          </div>
+          <p class="vsl-video-caption">Duración aproximada: 4–5 min</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       TESTIMONIOS EN VIDEO
+       De momento hay un solo testimonio (formato vertical
+       9:16), así que el video ocupa todo el ancho de
+       .testi-feature. Cuando haya 2 o más testimonios, lo
+       más sencillo es convertir .testi-feature en una
+       cuadrícula: duplica el bloque completo dentro de un
+       contenedor con "display:grid" (ver comentario en
+       style.css junto a #testimonios) o pide ayuda para
+       adaptarlo.
+       ═══════════════════════════════════════════════════ -->
+  <section id="testimonios">
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <p class="section-subtitle">Un paciente que vivió el proceso completo cuenta, en sus propias palabras, cómo cambió su relación con su cuerpo y su salud.</p>
+
+      <div class="testi-feature reveal">
+        <div class="testi-feature-frame">
+          <video
+            class="testi-feature-video"
+            controls
+            preload="metadata"
+            playsinline
+            poster="public/testimonio-poster.jpg">
+            <source src="public/testimonio.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de este video.
+          </video>
+        </div>
+        <div class="testi-feature-caption">
+          <p class="testi-feature-quote">"Tanto la ayuda profesional, el compromiso y la disciplina definitivamente fueron el mejor cambio en mi vida."</p>
+          <div class="testi-feature-meta">
+            <span class="testi-feature-name">Roger Carrillo</span>
+            <span class="testi-feature-dot"></span>
+            <span class="testi-feature-tag">Paciente Renace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FILOSOFÍA RENACE -->
+  <section id="filosofia-renace">
+    <div class="container">
+      <h2 class="section-title">No tratamos "el peso"; tratamos lo que hace que el peso cambie.</h2>
+      <p class="section-subtitle">Abordamos la obesidad desde cuatro áreas que siempre interactúan:</p>
+      <div class="specialties-grid reveal filo-specialties-grid">
+        <div class="specialty-card">
+          <div class="specialty-icon">1</div>
+          <div class="specialty-name">Medicina Metabólica</div>
+          <div class="specialty-text">Analizamos qué está pasando en tu cuerpo: metabolismo, insulina, glucosa, tiroides, inflamación, hormonas y riesgos asociados. Detectamos las razones biológicas que dificultan bajar de peso y afectan tu bienestar.</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">2</div>
+          <div class="specialty-name">Psicología de la alimentación</div>
+          <div class="specialty-text">La relación con la comida tiene historia. Trabajamos emociones, estrés, autocuidado, impulsos alimentarios y patrones que frenan tu proceso.</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">3</div>
+          <div class="specialty-name">Nutrición clínica</div>
+          <div class="specialty-text">La alimentación se ajusta a tu metabolismo, no a modas. Creamos estrategias reales, sostenibles y basadas en estudios, para ayudar a regular el hambre, mejorar energía y disminuir inflamación.</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">4</div>
+          <div class="specialty-name">Movimiento terapéutico</div>
+          <div class="specialty-text">El ejercicio no es un castigo. Usamos el movimiento como herramienta para mejorar el metabolismo, ganar masa muscular y reducir riesgo cardiometabólico.</div>
+        </div>
+      </div>
+      <p class="filo-footer-text">La obesidad mejora cuando todas estas piezas trabajan juntas.</p>
+    </div>
+  </section>
+
+
+  <!-- METODOLOGÍA RENACE -->
+  <section id="especialidades">
+    <div class="container">
+      <h2 class="section-title">Nuestra metodología</h2>
+      <p class="section-subtitle">Nuestra metodología es el corazón del tratamiento: un proceso clínico paso a paso para entender, intervenir y sostener cambios reales.</p>
+      <div class="renace-method-wrap reveal">
+        <div class="renace-method-left">
+          <div class="renace-acronym">
+            <div class="renace-row"><div class="renace-letter">R</div><div class="renace-copy"><div class="renace-title"><strong>Resolver</strong> factores de riesgo.</div></div></div>
+            <div class="renace-row"><div class="renace-letter">E</div><div class="renace-copy"><div class="renace-title"><strong>Explorar</strong> el estado metabólico real.</div></div></div>
+            <div class="renace-row"><div class="renace-letter">N</div><div class="renace-copy"><div class="renace-title"><strong>Nutrir</strong> el organismo con estrategias personalizadas.</div></div></div>
+            <div class="renace-row"><div class="renace-letter">A</div><div class="renace-copy"><div class="renace-title"><strong>Activar</strong> los procesos de cambio.</div></div></div>
+            <div class="renace-row"><div class="renace-letter">C</div><div class="renace-copy"><div class="renace-title"><strong>Crear</strong> hábitos sostenibles.</div></div></div>
+            <div class="renace-row"><div class="renace-letter">E</div><div class="renace-copy"><div class="renace-title"><strong>Evolucionar</strong> hacia un nuevo estado de salud.</div></div></div>
+          </div>
+          <div class="renace-footnote"><strong>RENACE</strong> es una ruta clínica diseñada para tratar la obesidad desde su raíz.</div>
+        </div>
+        <div class="renace-method-right" aria-hidden="true">
+          <img class="renace-silhouette" src="public/renace-silueta.png" alt="Silueta Método Renace">
+        </div>
+        <div class="renace-glow renace-glow-1"></div>
+        <div class="renace-glow renace-glow-2"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="filosofia-renace2">
+    <div class="container">
+      <h2 class="section-title">La obesidad no es comer mal. Es mucho más complejo que eso.</h2>
+      <p class="section-subtitle">Tu cuerpo no está fallando: está respondiendo a algo.</p>
+      <div class="specialties-grid reveal filo-specialties-grid">
+        <div class="specialty-card">
+          <div class="specialty-icon">1</div>
+          <div class="specialty-name">El metabolismo cambia… aunque comas igual</div>
+          <div class="specialty-text">Cuando hay resistencia a la insulina, desbalances hormonales o inflamación, el cuerpo almacena más grasa, produce más hambre y gasta menos energía.</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">2</div>
+          <div class="specialty-name">El estrés y el sueño también influyen</div>
+          <div class="specialty-text">El cortisol elevado, las noches mal dormidas y la fatiga acumulan peso aunque la alimentación no cambie.</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">3</div>
+          <div class="specialty-name">Las emociones importan</div>
+          <div class="specialty-text">La relación con la comida se ve afectada por ansiedad, culpa, cansancio emocional y sobrecarga mental. Esto no se resuelve "comiendo menos".</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">4</div>
+          <div class="specialty-name">No todos los cuerpos responden igual</div>
+          <div class="specialty-text">La edad, los embarazos, la genética, los medicamentos y los cambios hormonales hacen que cada persona tenga una historia metabólica distinta.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EQUIPO -->
+  <section id="equipo">
+    <div class="container">
+      <h2 class="section-title">Nuestro equipo</h2>
+      <p class="section-subtitle">Un equipo interdisciplinario certificado en obesidad, metabolismo y salud integral</p>
+      <div class="team-layout reveal">
+        <div class="team-slider" id="team-slider">
+          <div class="team-slider-viewport">
+            <div class="team-slider-track">
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Laura.jpg" alt="Dra. Laura Orozco Montero"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Dra. Laura Orozco Montero</h3>
+                  <div class="team-card-role">Medicina Metabólica & Estética</div>
+                  <p class="team-card-bio">Te acompaño a entender tu metabolismo y construir cambios sostenibles. Mi enfoque integra ciencia, empatía y medicina estética segura, coherente con tu salud interna.</p>
+                </div>
+              </article>
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Natalia.jpg" alt="Dra. Natalia Varela López"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Dra. Natalia Varela López</h3>
+                  <div class="team-card-role">Medicina Metabólica y Salud Mental Laboral</div>
+                  <p class="team-card-bio">Evaluo de forma integral los factores metabólicos que influyen en el peso y creo estrategias clínicas personalizadas. También abordo estrés y bienestar emocional en el contexto laboral.</p>
+                </div>
+              </article>
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Melissa.jpg" alt="Dra. Melissa Paniagua Gutiérrez"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Dra. Melissa Paniagua Gutiérrez</h3>
+                  <div class="team-card-role">Nutrición Clínica</div>
+                  <p class="team-card-bio">Trabajo por etapas para encontrar causas raíz y crear una alimentación sostenible. Integro metabolismo, digestión, inflamación y hábitos para mejorar tu energía y bienestar.</p>
+                </div>
+              </article>
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Grace.jpg" alt="Dra. Grace Chacón Chacón"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Dra. Grace Chacón Chacón</h3>
+                  <div class="team-card-role">Psicología</div>
+                  <p class="team-card-bio">Te acompaño a trabajar emociones, autoestima y patrones que influyen en tu salud. Construimos herramientas prácticas para sostener cambios reales sin culpa.</p>
+                </div>
+              </article>
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Tatiana.jpg" alt="Dra. Tatiana Rodríguez Alfaro"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Dra. Tatiana Rodríguez Alfaro</h3>
+                  <div class="team-card-role">Psicología</div>
+                  <p class="team-card-bio">Mi enfoque es cercano y libre de estigma. Trabajamos relación con la comida, ansiedad y autocuidado para que tu proceso sea sostenible y humano.</p>
+                </div>
+              </article>
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Adriana.jpg" alt="Lic. Adriana Sánchez Juárez"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Lic. Adriana Sánchez Juárez</h3>
+                  <div class="team-card-role">Fisioterapia</div>
+                  <p class="team-card-bio">Evalúo movilidad, dolor y limitaciones para diseñar un plan seguro y progresivo. El objetivo es moverte mejor, con menos dolor y más confianza.</p>
+                </div>
+              </article>
+              <article class="team-card team-card-mini">
+                <div class="team-card-photo"><img src="public/Noelia.jpg" alt="Lic. Noelia Rodríguez Araya"></div>
+                <div class="team-card-body">
+                  <h3 class="team-card-name">Lic. Noelia Rodríguez Araya</h3>
+                  <div class="team-card-role">Promotora de la salud física</div>
+                  <p class="team-card-bio">Te acompaño a incorporar actividad física de forma segura. Integro fuerza, movilidad y control motor para mejorar condición física, composición corporal y bienestar general.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="team-slider-controls">
+            <div class="team-dots">
+              <button class="team-dot active" data-index="0"></button>
+              <button class="team-dot" data-index="1"></button>
+              <button class="team-dot" data-index="2"></button>
+              <button class="team-dot" data-index="3"></button>
+              <button class="team-dot" data-index="4"></button>
+              <button class="team-dot" data-index="5"></button>
+              <button class="team-dot" data-index="6"></button>
+            </div>
+            <div class="team-arrows">
+              <button class="team-arrow-btn" id="team-prev" aria-label="Anterior">&larr;</button>
+              <button class="team-arrow-btn" id="team-next" aria-label="Siguiente">&rarr;</button>
+            </div>
+          </div>
+        </div>
+        <div class="team-static-card">
+          <div class="team-static-media">
+            <img src="public/Equipo.jpg" alt="Equipo Renace Medical Center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       POR QUÉ RENACE – diferenciadores / hook de valor
+       ═══════════════════════════════════════════════════ -->
+  <section id="por-que-renace">
+    <div class="container">
+      <h2 class="section-title">Lo que hace diferente al Método Renace</h2>
+      <p class="section-subtitle">No es una dieta más. Es un abordaje clínico, medible y sostenido en el tiempo.</p>
+      <div class="pqr-grid reveal">
+        <div class="pqr-card">
+          <div class="pqr-num">6</div>
+          <div class="pqr-label">Dimensiones evaluadas</div>
+          <p class="pqr-text">Médica, nutricional, psicológica, física, sueño y ambiental — no solo la báscula.</p>
+        </div>
+        <div class="pqr-card">
+          <div class="pqr-num">7</div>
+          <div class="pqr-label">Especialistas certificados</div>
+          <p class="pqr-text">Un solo equipo interdisciplinario coordinado, no consultas aisladas.</p>
+        </div>
+        <div class="pqr-card">
+          <div class="pqr-num">100%</div>
+          <div class="pqr-label">Planes personalizados</div>
+          <p class="pqr-text">Basados en tu propia historia metabólica, no en protocolos genéricos.</p>
+        </div>
+        <div class="pqr-card">
+          <div class="pqr-num">0</div>
+          <div class="pqr-label">Estigma</div>
+          <p class="pqr-text">Un espacio clínico, cercano y libre de juicio en cada etapa del proceso.</p>
+        </div>
+      </div>
+      <div class="pqr-compare reveal">
+        <div class="pqr-compare-col pqr-compare-old">
+          <div class="pqr-compare-title">El enfoque tradicional</div>
+          <ul>
+            <li>Trata solo el síntoma: el peso</li>
+            <li>Dietas genéricas sin evaluación metabólica</li>
+            <li>Un solo profesional, sin coordinación</li>
+            <li>Resultados que no se sostienen en el tiempo</li>
+          </ul>
+        </div>
+        <div class="pqr-compare-vs">VS</div>
+        <div class="pqr-compare-col pqr-compare-new">
+          <div class="pqr-compare-title">Método Renace</div>
+          <ul>
+            <li>Trata la causa: lo metabólico, emocional y físico</li>
+            <li>Diagnóstico clínico real antes de cualquier plan</li>
+            <li>Equipo interdisciplinario coordinado</li>
+            <li>Hábitos y cambios diseñados para sostenerse</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       FORMULARIO DE CALIFICACIÓN + WHATSAPP
+       ═══════════════════════════════════════════════════ -->
+  <section id="calificacion">
+    <div class="container">
+      <div class="cal-wrap reveal">
+        <div class="cal-intro">
+          <div class="cal-eyebrow">Último paso</div>
+          <h2 class="cal-title">¿Estás listo/a para un cambio real?</h2>
+          <p class="cal-text">Este proceso funciona mejor cuando hay compromiso real de ambas partes. Cuéntanos un poco de ti para saber cómo acompañarte.</p>
+        </div>
+
+        <form class="cal-card" id="cal-form" onsubmit="return false;">
+          <div class="cal-field">
+            <label class="cal-label" for="cal-nombre">Nombre completo</label>
+            <input class="cal-input" type="text" id="cal-nombre" name="nombre" placeholder="María Rodríguez" autocomplete="name" required>
+          </div>
+          <div class="cal-field">
+            <label class="cal-label" for="cal-correo">Correo electrónico</label>
+            <input class="cal-input" type="email" id="cal-correo" name="correo" placeholder="maria@correo.com" autocomplete="email" required>
+          </div>
+
+          <div class="cal-field">
+            <label class="cal-label">¿Estás dispuesto/a a invertir en un cambio real y sostenible para tu salud?</label>
+            <div class="cal-toggle-group" id="cal-toggle-group">
+              <button type="button" class="cal-toggle-btn" id="cal-btn-si" onclick="calSelect('si')">Sí, estoy listo/a</button>
+              <button type="button" class="cal-toggle-btn" id="cal-btn-no" onclick="calSelect('no')">Todavía no</button>
+            </div>
+          </div>
+
+          <div class="cal-result" id="cal-result-si">
+            <p class="cal-result-text">Perfecto. Escríbenos ahora mismo y coordinamos tu valoración inicial con nuestro equipo.</p>
+            <a class="btn-primary cal-wa-btn" id="cal-wa-link" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;vertical-align:-3px;">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.523 5.84L0 24l6.322-1.496A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.372l-.36-.214-3.727.882.938-3.619-.235-.373A9.818 9.818 0 0112 2.182c5.427 0 9.818 4.391 9.818 9.818 0 5.428-4.391 9.818-9.818 9.818z"/>
+              </svg>
+              Contactar por WhatsApp
+            </a>
+          </div>
+
+          <div class="cal-result" id="cal-result-no">
+            <p class="cal-result-text">Entendemos — un cambio real toma tiempo y no siempre es el momento. Cuando estés listo/a, aquí estaremos para acompañarte sin presión.</p>
+          </div>
+
+          <p class="cal-fine">Tus datos se usan únicamente para contactarte sobre tu valoración en Renace Medical Center.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <p class="section-subtitle">Agenda tu diagnóstico clínico y estético, o escríbenos para recibir más información sobre el Método Renace.</p>
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <h3>Renace Medical Center · Heredia</h3>
+          <div class="contact-row"><span class="contact-label">Dirección:</span><br/>Heredia, Mercedes Norte, del Colegio Claretiano 300 m norte, contiguo al Bar Restaurante Fingers.</div>
+          <div class="contact-row"><span class="contact-label">Teléfono / WhatsApp:</span><br/>+506 6057-3797</div>
+          <div class="contact-row"><span class="contact-label">Correo:</span><br/><a href="mailto:info@renacemedicalcenter.com">info@renacemedicalcenter.com</a></div>
+          <div class="contact-row"><span class="contact-label">Horario:</span><br/>Lunes a viernes · 8:00 a.m. – 7:00 p.m.<br/>Sábados · 8:00 a.m. – 4:00 p.m.</div>
+          <div class="contact-qr-block">
+            <div class="contact-cta-block">
+              <p class="contact-cta-text">Agenda tu cita de forma rápida y segura.</p>
+            </div>
+            <a class="btn-primary btn-form" href="https://wa.me/50660573797?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Renace%20Medical%20Center." target="_blank" rel="noopener noreferrer">Enviar mensaje por WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.0688719944737!2d-84.13247032409082!3d10.011169990094844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb19f0de7fe1%3A0xe9a9dd25022742a2!2sRenace%20Medical%20Center!5e0!3m2!1ses-419!2scr!4v1764555662610!5m2!1ses-419!2scr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-main">
+        <img class="footer-logo" src="public/logo secundario.png" alt="Renace Medical Center">
+        <span class="footer-main-text">© <span id="year"></span> Renace Medical Center · Centro médico metabólico en Heredia, Costa Rica.</span>
+        <img class="footer-logo" src="public/scope.png" alt="Renace Medical Center">
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       QUIZ POP-UP TEMPORAL
+       Para remover: eliminar TODO desde aquí hasta FIN QUIZ
+       ═══════════════════════════════════════════════════════ -->
+  <button id="quiz-trigger-btn" onclick="qpOpen()" aria-label="Evaluación metabólica gratuita">
+    <span class="qp-trigger-icon">🧬</span>
+    Evalúa tu metabolismo
+  </button>
+
+  <div id="quiz-popup-overlay" role="dialog" aria-modal="true">
+    <div id="quiz-popup-modal">
+      <button id="qp-close-btn" onclick="qpClose()" aria-label="Cerrar">✕</button>
+
+      <!-- Hook -->
+      <div id="qp-hook">
+        <div class="qp-hook-inner">
+          <div class="qp-hook-badge"><span class="qp-hook-badge-dot"></span>Evaluación gratuita · 3 minutos</div>
+          <h2 class="qp-hook-title">¿Tu cuerpo no responde como esperas?<br><em>Descubre por qué.</em></h2>
+          <p class="qp-hook-sub">Evalúa en 3 minutos las 6 dimensiones que explican por qué bajar de peso puede ser tan difícil — y obtén tu perfil de riesgo metabólico personalizado.</p>
+          <div class="qp-dims-grid">
+            <div class="qp-dim-chip"><div class="qp-dim-icon">🫀</div>Médica</div>
+            <div class="qp-dim-chip"><div class="qp-dim-icon">🥗</div>Nutricional</div>
+            <div class="qp-dim-chip"><div class="qp-dim-icon">🧠</div>Psicológica</div>
+            <div class="qp-dim-chip"><div class="qp-dim-icon">🏃</div>Física</div>
+            <div class="qp-dim-chip"><div class="qp-dim-icon">😴</div>Sueño</div>
+            <div class="qp-dim-chip"><div class="qp-dim-icon">🌿</div>Ambiental</div>
+          </div>
+          <div class="qp-trust-row">
+            <div class="qp-trust-item"><div class="qp-trust-check">✓</div>Sin costo ni compromiso</div>
+            <div class="qp-trust-item"><div class="qp-trust-check">✓</div>Equipo interdisciplinario</div>
+            <div class="qp-trust-item"><div class="qp-trust-check">✓</div>Libre de estigma</div>
+          </div>
+          <button class="qp-btn-start" onclick="qpStartQuiz()">
+            Iniciar mi evaluación
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="qp-disclaimer">Resultados orientativos — no sustituyen una evaluación clínica · Renace Medical Center, Heredia</p>
+        </div>
+      </div>
+
+      <!-- Quiz -->
+      <div id="qp-quiz-shell">
+        <div class="qp-progress-wrap">
+          <div class="qp-progress-meta"><span id="qp-prog-label">Dimensión 1 de 6</span><span id="qp-prog-pct">0%</span></div>
+          <div class="qp-progress-track"><div class="qp-progress-fill" id="qp-prog-fill" style="width:0%"></div></div>
+        </div>
+        <div class="qp-dim-pill" id="qp-dim-pill"><span class="qp-dim-pill-dot"></span><span id="qp-dim-pill-text">Médica</span></div>
+        <div class="qp-q-card" id="qp-q-card">
+          <div class="qp-q-text" id="qp-q-text"></div>
+          <div class="qp-options" id="qp-opts"></div>
+        </div>
+        <div class="qp-nav">
+          <button class="qp-btn-back" id="qp-btn-back" onclick="qpPrevQ()">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Anterior
+          </button>
+          <button class="qp-btn-next" id="qp-btn-next" onclick="qpNextQ()" disabled>
+            <span id="qp-btn-next-label">Siguiente</span>
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Resultados -->
+      <div id="qp-results-shell"></div>
+    </div>
+  </div>
+  <!-- FIN QUIZ POP-UP TEMPORAL -->
+
+
+  <script src="/script.js"></script>
+</body>
+</html>
